@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <%- include('./header.ejs') %>
+    <h1>hello 1902</h1>
+    <% if (!flag) { %>
+      <ul>
+        <li>week1</li>
+      </ul>
+    <% } %>
+    <%= title %> ----- <%- title %>
+
+    <% for (var i = 0; i < list.length; i++) { %>
+      <p><%- list[i] %></p>
+    <% } %>
+  </body>
+</html>
